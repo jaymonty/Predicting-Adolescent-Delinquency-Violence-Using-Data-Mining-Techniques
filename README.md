@@ -36,7 +36,7 @@ Professor Seungjoon Lee
 1. [Why Selected Features Important? 29](#_page28_x72.00_y347.98)
 1. [Meaning of Result 29](#_page28_x72.00_y623.95)
 
-[**References 31**](#_page30_x72.00_y529.60)
+1. [**References 31**](#_page30_x72.00_y529.60)
 
 1. **Introduction**
 1. <a name="_page2_x72.00_y72.00"></a>**Motivation**

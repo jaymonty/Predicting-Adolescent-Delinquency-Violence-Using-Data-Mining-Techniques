@@ -72,7 +72,9 @@ The dataset is from the Second International Self-Reported Delinquency Study, co
 
 *Dataset Sample*
 
-![](Aspose.Words.cd14414e-ca41-46f4-ba4e-161fe571d466.001.jpeg)
+
+![Aspose Words cd14414e-ca41-46f4-ba4e-161fe571d466 001](https://github.com/jaymonty/Predicting-Adolescent-Delinquency-Violence-Using-Data-Mining-Techniques/assets/18198506/912d9ceb-c704-4c65-a96b-e159747fa076)
+
 
 The sample of the questionnaire can be found in Figure 2. This questionnaire was used to obtain the data.
 
@@ -80,7 +82,10 @@ The sample of the questionnaire can be found in Figure 2. This questionnaire was
 
 *Sample of the Questionnaire*
 
-![](Aspose.Words.cd14414e-ca41-46f4-ba4e-161fe571d466.002.jpeg)
+
+![Aspose Words cd14414e-ca41-46f4-ba4e-161fe571d466 002](https://github.com/jaymonty/Predicting-Adolescent-Delinquency-Violence-Using-Data-Mining-Techniques/assets/18198506/9ebeea05-f62f-445a-be83-08e6adb9c2d5)
+
+
 
 2. **Dataset<a name="_page7_x72.00_y390.64"></a> Pre-Processing**
 
@@ -115,7 +120,8 @@ This project explored two feature selection methods: Logistic Regression P-value
 
 *Snapshot of Results from Logistic Regression P-Value Feature Selection Method*
 
-![](Aspose.Words.cd14414e-ca41-46f4-ba4e-161fe571d466.003.jpeg)
+![Aspose Words cd14414e-ca41-46f4-ba4e-161fe571d466 003](https://github.com/jaymonty/Predicting-Adolescent-Delinquency-Violence-Using-Data-Mining-Techniques/assets/18198506/eef93845-6885-4f6b-ba9f-e02da18bb40c)
+
 
 When comparing the performance of this method to the full dataset, the F1 score went up slightly for the Decision Tree (0.0085 improvement) and Random Forest (0.0062 improvement). The Logistic Regression model performed slightly worse than the full dataset base model (0.0086 worse). Overall, this method reduced the dimensionality and maintained good performance.
 
@@ -125,7 +131,8 @@ The Random Forest feature importance works by representing the reduction in impu
 
 *Visual Bar Chart of All Features and Their Feature Importance Score*
 
-![](Aspose.Words.cd14414e-ca41-46f4-ba4e-161fe571d466.004.jpeg)
+![Aspose Words cd14414e-ca41-46f4-ba4e-161fe571d466 004](https://github.com/jaymonty/Predicting-Adolescent-Delinquency-Violence-Using-Data-Mining-Techniques/assets/18198506/c779b0bb-598c-4cb4-9c99-670bb7c6612d)
+
 
 Based on our research, the threshold value of (0.01) is often used to select features with this method. We were concerned that this would result in poor performance due to the lack of features (about 40 features). Instead, we chose to utilize the value of (0.075) because we could observe a noticeable dip in the bar chart plot just after this value. This value equated to 62 features that were (0.075) or above in importance. We then used these 62 features to test our base models for all three models. Unfortunately, the results were poor for this method of feature selection. For example, when we compared this method with the P-value on the Logistic Regression model, we found that our performance on the F1 score metric had degraded by (0.021). This was also true for the Decision Tree and Random Forest.
 
@@ -141,7 +148,8 @@ The Random Forest feature importance (*feature\_importances\_*) allowed the abil
 
 *Snapshot of the Top 15 Important Features Based on Random Forest feature\_importances\_*
 
-![](Aspose.Words.cd14414e-ca41-46f4-ba4e-161fe571d466.005.jpeg)
+![Aspose Words cd14414e-ca41-46f4-ba4e-161fe571d466 005](https://github.com/jaymonty/Predicting-Adolescent-Delinquency-Violence-Using-Data-Mining-Techniques/assets/18198506/f364687d-c5a2-472e-b985-383b8a8ce719)
+
 
 At first glance, it is challenging to derive any meaning from this snapshot due to the fact that the features are not very intuitive to understand. Upon closer examination, we begin to see that there exist two primary themes. The first theme is features related to friends. The following features are related to this theme:
 
@@ -193,7 +201,8 @@ The general structure for all three models was implemented in a similar fashion.
 
 *Model Development Process*
 
-![](Aspose.Words.cd14414e-ca41-46f4-ba4e-161fe571d466.006.jpeg)
+![Aspose Words cd14414e-ca41-46f4-ba4e-161fe571d466 006](https://github.com/jaymonty/Predicting-Adolescent-Delinquency-Violence-Using-Data-Mining-Techniques/assets/18198506/d4baf039-ee82-465d-b5ef-a52c5982421a)
+
 
 5. **Results**
 
@@ -211,7 +220,8 @@ First, we created a base model with 125 features and tested its performance with
 
 *Logistic Regression Parameters from Grid Search*
 
-![](Aspose.Words.cd14414e-ca41-46f4-ba4e-161fe571d466.007.png)
+![Aspose Words cd14414e-ca41-46f4-ba4e-161fe571d466 007](https://github.com/jaymonty/Predicting-Adolescent-Delinquency-Violence-Using-Data-Mining-Techniques/assets/18198506/c4b5d43a-c019-4a81-8ef4-7f10b4ffa764)
+
 
 It is worth mentioning that the performance gain of hyper-parameter tuning was minimal over the base model (0.0008 improvement) based on the F1 score metric (0.5091). Finally, the model threshold was adjusted to optimize the F1 score (0.5985). The figure below shows the best-performing threshold.
 
@@ -219,7 +229,8 @@ It is worth mentioning that the performance gain of hyper-parameter tuning was m
 
 *Logistic Regression Best F1-Score Threshold*
 
-![](Aspose.Words.cd14414e-ca41-46f4-ba4e-161fe571d466.008.jpeg)
+![Aspose Words cd14414e-ca41-46f4-ba4e-161fe571d466 008](https://github.com/jaymonty/Predicting-Adolescent-Delinquency-Violence-Using-Data-Mining-Techniques/assets/18198506/780a5c69-71a8-406e-86d9-e2229bec55ed)
+
 
 10
 
@@ -227,7 +238,8 @@ The table below shows the performance of Logistic Regression for each model deve
 
 *Logistic Regression F1-Score Performance on Test Data*
 
-![](Aspose.Words.cd14414e-ca41-46f4-ba4e-161fe571d466.009.jpeg)
+![Aspose Words cd14414e-ca41-46f4-ba4e-161fe571d466 009](https://github.com/jaymonty/Predicting-Adolescent-Delinquency-Violence-Using-Data-Mining-Techniques/assets/18198506/a53f3ef7-f8f1-4485-acbe-1fd84f3073b5)
+
 
 Threshold tuning to optimize the F1 score greatly boosted the model's ability to classify violence. The figures below depict the confusion matrix and ROC-AUC for the best-performing model (P-value + Parameter tuning + Threshold).
 
@@ -235,14 +247,15 @@ Threshold tuning to optimize the F1 score greatly boosted the model's ability to
 
 *Logistic Regression Best Performing Model Confusion Matrix*
 
-![](Aspose.Words.cd14414e-ca41-46f4-ba4e-161fe571d466.010.jpeg)
+![Aspose Words cd14414e-ca41-46f4-ba4e-161fe571d466 010](https://github.com/jaymonty/Predicting-Adolescent-Delinquency-Violence-Using-Data-Mining-Techniques/assets/18198506/7d5ea979-be79-47f1-83d5-ab1d11968aae)
+
 
 **Figure 10****
 21
 
 *Logistic Regression Best Performing Model ROC/AUC*
 
-![](Aspose.Words.cd14414e-ca41-46f4-ba4e-161fe571d466.011.jpeg)
+![Aspose Words cd14414e-ca41-46f4-ba4e-161fe571d466 011](https://github.com/jaymonty/Predicting-Adolescent-Delinquency-Violence-Using-Data-Mining-Techniques/assets/18198506/645a414b-b6f3-4db0-a10d-7dfefbf12c44)
 
 2. **Decision<a name="_page20_x72.00_y343.99"></a> Tree**
 
@@ -254,7 +267,8 @@ First, we created a base model with all 125 features and tested its performance 
 
 *Decision Tree Parameters from Grid Search*
 
-![](Aspose.Words.cd14414e-ca41-46f4-ba4e-161fe571d466.012.png)
+![Aspose Words cd14414e-ca41-46f4-ba4e-161fe571d466 012](https://github.com/jaymonty/Predicting-Adolescent-Delinquency-Violence-Using-Data-Mining-Techniques/assets/18198506/b6575ebf-cb75-407f-9a64-a03c260e282b)
+
 
 
 32
@@ -265,13 +279,15 @@ Notably, the performance gain of hyper-parameter tuning was significant over the
 
 *Decision Tree Best F1-Score Threshold*
 
-![](Aspose.Words.cd14414e-ca41-46f4-ba4e-161fe571d466.013.jpeg)
+![Aspose Words cd14414e-ca41-46f4-ba4e-161fe571d466 013](https://github.com/jaymonty/Predicting-Adolescent-Delinquency-Violence-Using-Data-Mining-Techniques/assets/18198506/65be1709-427e-4571-92a5-648d697cd428)
+
 
 The table below shows the performance of the Decision Tree for each model development step with the F1 metric and the threshold used for the final model. **Table 2**
 
 *Decision Tree F1-Score Performance on Test Data*
 
-![](Aspose.Words.cd14414e-ca41-46f4-ba4e-161fe571d466.014.jpeg)
+
+![Aspose Words cd14414e-ca41-46f4-ba4e-161fe571d466 014](https://github.com/jaymonty/Predicting-Adolescent-Delinquency-Violence-Using-Data-Mining-Techniques/assets/18198506/d717a72b-8652-4d2e-8790-0c1b057602b5)
 
 Hyper-parameter tuning and Threshold tuning to optimize the F1 score greatly boosted the model's ability to classify violence. The figures below depict the confusion matrix and ROC-AUC for the best-performing Decision Tree model (P-value + Parameter tuning + Threshold).
 
@@ -279,13 +295,15 @@ Hyper-parameter tuning and Threshold tuning to optimize the F1 score greatly boo
 
 *Decision Tree Best Performing Model Confusion Matrix*
 
-![](Aspose.Words.cd14414e-ca41-46f4-ba4e-161fe571d466.015.jpeg)
+![Aspose Words cd14414e-ca41-46f4-ba4e-161fe571d466 015](https://github.com/jaymonty/Predicting-Adolescent-Delinquency-Violence-Using-Data-Mining-Techniques/assets/18198506/4c85cd8d-6be7-4b25-a547-4b289960ebfe)
+
 
 **Figure 14**
 
 *Decision Tree Best Performing Model ROC/AUC*
 
-![](Aspose.Words.cd14414e-ca41-46f4-ba4e-161fe571d466.016.jpeg)
+![Aspose Words cd14414e-ca41-46f4-ba4e-161fe571d466 016](https://github.com/jaymonty/Predicting-Adolescent-Delinquency-Violence-Using-Data-Mining-Techniques/assets/18198506/2a007cfa-9c01-44cf-a558-969a77db41d0)
+
 
 3. **Random<a name="_page23_x72.00_y310.39"></a> Forest**
 
@@ -297,7 +315,8 @@ First, we created a base model with all of the features and tested its performan
 
 *Random Forest Parameters from Grid Search*
 
-![](Aspose.Words.cd14414e-ca41-46f4-ba4e-161fe571d466.017.png)
+![Aspose Words cd14414e-ca41-46f4-ba4e-161fe571d466 017](https://github.com/jaymonty/Predicting-Adolescent-Delinquency-Violence-Using-Data-Mining-Techniques/assets/18198506/0593d7f5-ab06-4bac-aa3f-54011a4842b3)
+
 
 We compared the returned best parameters from our grid searches for the Decision Tree and Random Forest since they are both using a form of a Decision Tree. Both models tuned the same parameters: max\_depth, min\_samples\_leaf, and min\_samples\_split. They differed by the Decision Tree tuning the criterion and the Random Forest tuning the n\_estimators. Overall, the shared parameters were vastly different for the two models. For example, the Decision Tree had a max\_depth of 10, while the Random Forest had an unlimited max\_depth. Another example is the min\_samples\_leaf, where the Decision Tree had six, and the Random Forest had one. The reason that the shared parameters differed was due to the fact of how the Random Forest algorithm functions. Random Forest is an ensemble algorithm that makes use of bootstrap aggregation (Bagging), which means that it randomly samples (with replacement) features and data to construct numerous decision trees. This key difference is why the shared parameters are different for both models.
 
@@ -307,7 +326,8 @@ It is worth mentioning that the performance gain of hyper-parameter tuning for t
 
 *Random Forest Best F1-Score Threshold*
 
-![](Aspose.Words.cd14414e-ca41-46f4-ba4e-161fe571d466.018.jpeg)
+![Aspose Words cd14414e-ca41-46f4-ba4e-161fe571d466 018](https://github.com/jaymonty/Predicting-Adolescent-Delinquency-Violence-Using-Data-Mining-Techniques/assets/18198506/9cd77bda-ae6f-473f-807d-0f80de9cfab9)
+
 
 The table below shows the performance of Random Forest for each model development step with the F1 score and the threshold used for the final model.
 
@@ -315,19 +335,22 @@ The table below shows the performance of Random Forest for each model developmen
 
 *Random Forest F1-Score Performance on Test Data*
 
-![](Aspose.Words.cd14414e-ca41-46f4-ba4e-161fe571d466.019.jpeg)
+![Aspose Words cd14414e-ca41-46f4-ba4e-161fe571d466 019](https://github.com/jaymonty/Predicting-Adolescent-Delinquency-Violence-Using-Data-Mining-Techniques/assets/18198506/3545cba1-1d54-42b8-9159-cb9fcc512d0f)
+
 
 Threshold tuning to optimize the F1 score greatly boosted the model's ability to classify violence, the largest improvement of the three models. The figures below depict the confusion matrix and ROC-AUC for the best-performing model (P-value + Parameter tuning + Threshold). **Figure 17**
 
 *Random Forest Best Performing Model Confusion Matrix*
 
-![](Aspose.Words.cd14414e-ca41-46f4-ba4e-161fe571d466.020.jpeg)
+![Aspose Words cd14414e-ca41-46f4-ba4e-161fe571d466 020](https://github.com/jaymonty/Predicting-Adolescent-Delinquency-Violence-Using-Data-Mining-Techniques/assets/18198506/3c5994ad-eb17-4a5b-8d03-c1b54f525799)
+
 
 **Figure 18**
 
 *Random Forest Best Performing Model ROC/AUC*
 
-![](Aspose.Words.cd14414e-ca41-46f4-ba4e-161fe571d466.021.jpeg)
+![Aspose Words cd14414e-ca41-46f4-ba4e-161fe571d466 021](https://github.com/jaymonty/Predicting-Adolescent-Delinquency-Violence-Using-Data-Mining-Techniques/assets/18198506/ef6d5b51-494b-43e5-9ab5-864da476454b)
+
 
 4. **Model<a name="_page26_x72.00_y591.08"></a> Comparison**
 
@@ -337,7 +360,8 @@ A culmination of three metrics was employed to evaluate the performance of all t
 
 *All Models F1-Score, AUC, Accuracy, and Threshold Compared on Test Data*
 
-![](Aspose.Words.cd14414e-ca41-46f4-ba4e-161fe571d466.022.jpeg)
+![Aspose Words cd14414e-ca41-46f4-ba4e-161fe571d466 022](https://github.com/jaymonty/Predicting-Adolescent-Delinquency-Violence-Using-Data-Mining-Techniques/assets/18198506/dc26555d-673a-4e62-bf1d-44379d90b371)
+
 
 6. **Discussion**
 

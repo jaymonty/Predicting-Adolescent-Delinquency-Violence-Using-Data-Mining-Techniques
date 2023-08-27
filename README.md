@@ -1,6 +1,6 @@
 # Predicting-Adolescent-Delinquency-Violence-Using-Data-Mining-Techniques
 
-19
+
 
 **Predicting Adolescent Delinquency Violence Using Data Mining Techniques** Dhruv Jain, Edward Montoya, Himanshee, Jeet Pankajkumar Parekh
 
@@ -232,7 +232,7 @@ It is worth mentioning that the performance gain of hyper-parameter tuning was m
 ![Aspose Words cd14414e-ca41-46f4-ba4e-161fe571d466 008](https://github.com/jaymonty/Predicting-Adolescent-Delinquency-Violence-Using-Data-Mining-Techniques/assets/18198506/780a5c69-71a8-406e-86d9-e2229bec55ed)
 
 
-10
+
 
 The table below shows the performance of Logistic Regression for each model development step with the F1 score metric and the threshold used for the final model. **Table 1**
 
@@ -251,7 +251,7 @@ Threshold tuning to optimize the F1 score greatly boosted the model's ability to
 
 
 **Figure 10****
-21
+
 
 *Logistic Regression Best Performing Model ROC/AUC*
 
@@ -271,7 +271,6 @@ First, we created a base model with all 125 features and tested its performance 
 
 
 
-32
 
 Notably, the performance gain of hyper-parameter tuning was significant over the base model by (0.0463) improvement based on the F1 score, which was not observed in the Logistic Regression model. Finally, the model threshold was adjusted to optimize the F1 score, which provided an even greater performance (0.5508). The figure below shows the best-performing threshold. It should be noted that the threshold was higher for the Decision Tree compared to Logistic Regression.
 

@@ -4,13 +4,13 @@
 
 **Predicting Adolescent Delinquency Violence Using Data Mining Techniques** 
 
-Dhruv Jain, Edward Montoya, Himanshee, Jeet Pankajkumar Parekh
+Dhruv Jain, Edward Montoya
 
 Department of Applied Data Science, San Jose State University DATA 240: Data Mining
 
 Professor Seungjoon Lee
 
-2023, May 14
+2023, May 
 
 **Contents**
 
